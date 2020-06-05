@@ -5,13 +5,13 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Command;
+namespace Checkitsedo\Calendarize\Command;
 
-use HDNET\Calendarize\Domain\Model\Event;
-use HDNET\Calendarize\Domain\Repository\EventRepository;
-use HDNET\Calendarize\Service\IndexerService;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\Event;
+use Checkitsedo\Calendarize\Domain\Repository\EventRepository;
+use Checkitsedo\Calendarize\Service\IndexerService;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
 use TYPO3\CMS\Core\Database\Query\Restriction\HiddenRestriction;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
@@ -26,13 +26,13 @@ class CleanupCommandController extends AbstractCommandController
     const MODUS_HIDDEN = 'hide';
     const MODUS_DELETED = 'delete';
     const DEFAULT_WAIT_PERIOD = 14;
-    const DEFAULT_CLEANUP_REPOSITORY = 'HDNET\\Calendarize\\Domain\\Repository\\EventRepository';
+    const DEFAULT_CLEANUP_REPOSITORY = 'Checkitsedo\\Calendarize\\Domain\\Repository\\EventRepository';
 
     /**
      * Cleanup the event models.
      * Remove outdated events to keep a small footprint. This gain maybe a little more performance.
      *
-     * @param string $repositoryName repository of the event to clean up. Default: 'HDNET\Calendarize\Domain\Repository\EventRepository'
+     * @param string $repositoryName repository of the event to clean up. Default: 'Checkitsedo\Calendarize\Domain\Repository\EventRepository'
      * @param string $modus          What to do with cleaned Events? Set them 'hide' or 'delete'. Default: 'hide'
      * @param int    $waitingPeriod  how many days to wait after ending the Event before 'hide/delete' it
      */

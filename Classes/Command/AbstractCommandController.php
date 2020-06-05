@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Command;
+namespace Checkitsedo\Calendarize\Command;
 
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;

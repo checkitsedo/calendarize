@@ -18,7 +18,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('ke_search')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     'calendarize',
     'Calendar',
-    \HDNET\Calendarize\Utility\TranslateUtility::getLll('pluginName')
+    \Checkitsedo\Calendarize\Utility\TranslateUtility::getLll('pluginName')
 );
 
 // module icon
@@ -50,7 +50,7 @@ $categoryRegistry->add('calendarize', 'tx_calendarize_domain_model_pluginconfigu
 ');
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-        'HDNET.calendarize',
+        'Checkitsedo.calendarize',
         'web',
         'calendarize',
         '',
@@ -69,17 +69,17 @@ $categoryRegistry->add('calendarize', 'tx_calendarize_domain_model_pluginconfigu
 
 $iconPath = \TYPO3\CMS\Core\Utility\PathUtility::getAbsoluteWebPath(\TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName('EXT:calendarize/Resources/Public/Icons/'));
 $iconRegistry->registerIcon(
-    'apps-calendarize-type-' . \HDNET\Calendarize\Domain\Model\Configuration::TYPE_TIME,
+    'apps-calendarize-type-' . \Checkitsedo\Calendarize\Domain\Model\Configuration::TYPE_TIME,
     \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
     ['source' => $iconPath . 'Configuration.png']
 );
 $iconRegistry->registerIcon(
-    'apps-calendarize-type-' . \HDNET\Calendarize\Domain\Model\Configuration::TYPE_GROUP,
+    'apps-calendarize-type-' . \Checkitsedo\Calendarize\Domain\Model\Configuration::TYPE_GROUP,
     \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
     ['source' => $iconPath . 'ConfigurationGroupType.png']
 );
 $iconRegistry->registerIcon(
-    'apps-calendarize-type-' . \HDNET\Calendarize\Domain\Model\Configuration::TYPE_EXTERNAL,
+    'apps-calendarize-type-' . \Checkitsedo\Calendarize\Domain\Model\Configuration::TYPE_EXTERNAL,
     \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
     ['source' => $iconPath . 'ConfigurationExternal.png']
 );

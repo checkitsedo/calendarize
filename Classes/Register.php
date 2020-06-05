@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize;
+namespace Checkitsedo\Calendarize;
 
-use HDNET\Calendarize\Domain\Model\Event;
-use HDNET\Calendarize\Service\TcaInformation;
+use Checkitsedo\Calendarize\Domain\Model\Event;
+use Checkitsedo\Calendarize\Service\TcaInformation;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 /**

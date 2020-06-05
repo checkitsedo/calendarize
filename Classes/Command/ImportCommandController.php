@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Command;
+namespace Checkitsedo\Calendarize\Command;
 
-use HDNET\Calendarize\Service\IndexerService;
+use Checkitsedo\Calendarize\Service\IndexerService;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;

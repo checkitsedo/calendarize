@@ -7,35 +7,35 @@ if (!\defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
-\HDNET\Autoloader\Loader::extLocalconf('HDNET', 'calendarize', \HDNET\Calendarize\Register::getDefaultAutoloader());
+\HDNET\Autoloader\Loader::extLocalconf('Checkitsedo', 'calendarize', \Checkitsedo\Calendarize\Register::getDefaultAutoloader());
 
-if (!(bool) \HDNET\Calendarize\Utility\ConfigurationUtility::get('disableDefaultEvent')) {
-    \HDNET\Calendarize\Register::extLocalconf(\HDNET\Calendarize\Register::getDefaultCalendarizeConfiguration());
+if (!(bool) \Checkitsedo\Calendarize\Utility\ConfigurationUtility::get('disableDefaultEvent')) {
+    \Checkitsedo\Calendarize\Register::extLocalconf(\Checkitsedo\Calendarize\Register::getDefaultCalendarizeConfiguration());
     /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
     $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
     $signalSlotDispatcher->connect(
-        \HDNET\Calendarize\Command\ImportCommandController::class,
+        \Checkitsedo\Calendarize\Command\ImportCommandController::class,
         'importCommand',
-        \HDNET\Calendarize\Slots\EventImport::class,
+        \Checkitsedo\Calendarize\Slots\EventImport::class,
         'importCommand'
     );
 
     $signalSlotDispatcher->connect(
-        \HDNET\Calendarize\Controller\BookingController::class,
+        \Checkitsedo\Calendarize\Controller\BookingController::class,
         'bookingAction',
-        \HDNET\Calendarize\Slots\BookingCountries::class,
+        \Checkitsedo\Calendarize\Slots\BookingCountries::class,
         'bookingSlot'
     );
     $signalSlotDispatcher->connect(
-        \HDNET\Calendarize\Controller\BookingController::class,
+        \Checkitsedo\Calendarize\Controller\BookingController::class,
         'sendAction',
-        \HDNET\Calendarize\Slots\BookingCountries::class,
+        \Checkitsedo\Calendarize\Slots\BookingCountries::class,
         'sendSlot'
     );
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'HDNET.calendarize',
+    'Checkitsedo.calendarize',
     'Calendar',
     [
         'Calendar' => 'list,past,latest,year,quater,month,week,day,detail,search,result,single,shortcut',
@@ -47,10 +47,10 @@ if (!(bool) \HDNET\Calendarize\Utility\ConfigurationUtility::get('disableDefault
     ]
 );
 
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\HDNET\Calendarize\Updates\CalMigrationUpdate::class] = \HDNET\Calendarize\Updates\CalMigrationUpdate::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\HDNET\Calendarize\Updates\NewIncludeExcludeStructureUpdate::class] = \HDNET\Calendarize\Updates\NewIncludeExcludeStructureUpdate::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\Checkitsedo\Calendarize\Updates\CalMigrationUpdate::class] = \Checkitsedo\Calendarize\Updates\CalMigrationUpdate::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\Checkitsedo\Calendarize\Updates\NewIncludeExcludeStructureUpdate::class] = \Checkitsedo\Calendarize\Updates\NewIncludeExcludeStructureUpdate::class;
 
-$GLOBALS['TYPO3_CONF_VARS']['FE']['typolinkBuilder']['record'] = \HDNET\Calendarize\Typolink\DatabaseRecordLinkBuilder::class;
+$GLOBALS['TYPO3_CONF_VARS']['FE']['typolinkBuilder']['record'] = \Checkitsedo\Calendarize\Typolink\DatabaseRecordLinkBuilder::class;
 
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:calendarize/Configuration/TsConfig/ContentElementWizard.txt">');
@@ -68,9 +68,9 @@ foreach ($icons as $identifier => $path) {
 }
 
 if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('google_services')) {
-    \FRUIT\GoogleServices\Service\SitemapProvider::addProvider(\HDNET\Calendarize\Service\SitemapProvider\Events::class);
+    \FRUIT\GoogleServices\Service\SitemapProvider::addProvider(\Checkitsedo\Calendarize\Service\SitemapProvider\Events::class);
 }
 
 if (class_exists(\TYPO3\CMS\Core\Routing\Aspect\PersistedPatternMapper::class)) {
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['routing']['aspects']['EventMapper'] = \HDNET\Calendarize\Routing\Aspect\EventMapper::class;
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['routing']['aspects']['EventMapper'] = \Checkitsedo\Calendarize\Routing\Aspect\EventMapper::class;
 }

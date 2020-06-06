@@ -5,14 +5,14 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service\Url;
+namespace Checkitsedo\Calendarize\Service\Url;
 
-use HDNET\Calendarize\Domain\Model\Index;
-use HDNET\Calendarize\Domain\Repository\IndexRepository;
-use HDNET\Calendarize\Features\SpeakingUrlInterface;
-use HDNET\Calendarize\Service\AbstractService;
-use HDNET\Calendarize\Utility\ConfigurationUtility;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Domain\Repository\IndexRepository;
+use Checkitsedo\Calendarize\Features\SpeakingUrlInterface;
+use Checkitsedo\Calendarize\Service\AbstractService;
+use Checkitsedo\Calendarize\Utility\ConfigurationUtility;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Routing\Aspect\PersistedAliasMapper;
 
 /**

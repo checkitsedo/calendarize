@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Utility;
+namespace Checkitsedo\Calendarize\Utility;
 
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
@@ -41,6 +41,6 @@ class TranslateUtility
      */
     public static function getLll(string $key): string
     {
-        return \HDNET\Autoloader\Utility\TranslateUtility::getLllString($key, 'calendarize', 'locallang.xlf');
+        return \Checkitsedo\Autoloader\Utility\TranslateUtility::getLllString($key, 'calendarize', 'locallang.xlf');
     }
 }

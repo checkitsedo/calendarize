@@ -5,11 +5,11 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Domain\Model;
+namespace Checkitsedo\Calendarize\Domain\Model;
 
-use HDNET\Calendarize\Features\FeedInterface;
-use HDNET\Calendarize\Features\KeSearchIndexInterface;
-use HDNET\Calendarize\Features\SpeakingUrlInterface;
+use Checkitsedo\Calendarize\Features\FeedInterface;
+use Checkitsedo\Calendarize\Features\KeSearchIndexInterface;
+use Checkitsedo\Calendarize\Features\SpeakingUrlInterface;
 use TYPO3\CMS\Extbase\Domain\Model\Category;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
@@ -110,7 +110,7 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
      * Relation field. It is just used by the importer of the default events.
      * You do not need this field, if you don't use the default Event.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\HDNET\Calendarize\Domain\Model\Configuration>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\Calendarize\Domain\Model\Configuration>
      */
     protected $calendarize;
 

@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers;
+namespace Checkitsedo\Calendarize\ViewHelpers;
 
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 

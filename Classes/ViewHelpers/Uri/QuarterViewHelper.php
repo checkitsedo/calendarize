@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\Uri;
+namespace Checkitsedo\Calendarize\ViewHelpers\Uri;
 
 /**
  * Uri to the quarter.
  */
-class QuarterViewHelper extends \HDNET\Calendarize\ViewHelpers\Link\QuarterViewHelper
+class QuarterViewHelper extends \Checkitsedo\Calendarize\ViewHelpers\Link\QuarterViewHelper
 {
     /**
      * Render the uri to the given quarter.

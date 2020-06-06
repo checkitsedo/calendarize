@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\Link;
+namespace Checkitsedo\Calendarize\ViewHelpers\Link;
 
-use HDNET\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
 
 /**
  * Link to the quarter.

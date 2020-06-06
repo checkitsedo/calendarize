@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Domain\Model;
+namespace Checkitsedo\Calendarize\Domain\Model;
 
-use HDNET\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
 
 /**
  * Configuration for time options.
@@ -108,7 +108,7 @@ class Configuration extends AbstractModel implements ConfigurationInterface
     /**
      * Groups.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\HDNET\Calendarize\Domain\Model\ConfigurationGroup>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\Calendarize\Domain\Model\ConfigurationGroup>
      * @db text
      * @lazy
      * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy

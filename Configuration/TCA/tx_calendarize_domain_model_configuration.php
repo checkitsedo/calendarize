@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use HDNET\Autoloader\Utility\ArrayUtility;
 use HDNET\Autoloader\Utility\ModelUtility;
-use HDNET\Calendarize\Domain\Model\Configuration;
-use HDNET\Calendarize\Service\TcaService;
-use HDNET\Calendarize\Service\TimeSelectionWizard;
-use HDNET\Calendarize\Utility\TranslateUtility;
+use Checkitsedo\Calendarize\Domain\Model\Configuration;
+use Checkitsedo\Calendarize\Service\TcaService;
+use Checkitsedo\Calendarize\Service\TimeSelectionWizard;
+use Checkitsedo\Calendarize\Utility\TranslateUtility;
 
 $base = ModelUtility::getTcaInformation(Configuration::class);
 

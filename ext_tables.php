@@ -7,7 +7,7 @@ if (!\defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
-\HDNET\Autoloader\Loader::extTables('HDNET', 'calendarize', \HDNET\Calendarize\Register::getDefaultAutoloader());
+\HDNET\Autoloader\Loader::extTables('Checkitsedo', 'calendarize', \Checkitsedo\Calendarize\Register::getDefaultAutoloader());
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_calendarize_domain_model_configuration,tx_calendarize_domain_model_index');
 

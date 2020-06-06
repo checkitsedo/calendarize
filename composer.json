@@ -47,9 +47,6 @@
 		"lochmueller/autoloader": "^6.0",
 		"sabre/vobject": "^4.2"
 	},
-	"replace": {
-		"typo3-ter/calendarize": "self.version"
-	},
 	"homepage": "https://github.com/lochmueller/calendarize",
 	"license": "GPL-2.0-or-later",
 	"support": {

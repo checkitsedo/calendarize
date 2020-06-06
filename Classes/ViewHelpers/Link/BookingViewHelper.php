@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\Link;
+namespace Checkitsedo\Calendarize\ViewHelpers\Link;
 
-use HDNET\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Domain\Model\Index;
 
 /**
  * Link to the booking page.

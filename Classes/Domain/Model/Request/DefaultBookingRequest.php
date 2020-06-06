@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Domain\Model\Request;
+namespace Checkitsedo\Calendarize\Domain\Model\Request;
 
 /**
  * DefaultBookingRequest.

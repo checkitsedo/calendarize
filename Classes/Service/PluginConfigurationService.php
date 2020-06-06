@@ -5,11 +5,11 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service;
+namespace Checkitsedo\Calendarize\Service;
 
-use HDNET\Calendarize\Domain\Model\PluginConfiguration;
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\PluginConfiguration;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
 /**

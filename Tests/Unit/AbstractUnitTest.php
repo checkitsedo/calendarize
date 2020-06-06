@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * AbstractUnitTest.
  */
-namespace HDNET\Calendarize\Tests\Unit;
+namespace Checkitsedo\Calendarize\Tests\Unit;
 
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 

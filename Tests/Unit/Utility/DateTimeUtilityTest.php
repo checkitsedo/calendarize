@@ -5,10 +5,10 @@ declare(strict_types=1);
 /**
  * DateTimeUtilityTest.
  */
-namespace HDNET\Calendarize\Tests\Unit\DateTime;
+namespace Checkitsedo\Calendarize\Tests\Unit\DateTime;
 
-use HDNET\Calendarize\Tests\Unit\AbstractUnitTest;
-use HDNET\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Tests\Unit\AbstractUnitTest;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
 
 /**
  * DateTimeUtilityTest.

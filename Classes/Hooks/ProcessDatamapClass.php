@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Hooks;
+namespace Checkitsedo\Calendarize\Hooks;
 
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Service\IndexerService;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Service\IndexerService;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

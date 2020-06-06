@@ -5,15 +5,15 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service;
+namespace Checkitsedo\Calendarize\Service;
 
 use Exception;
-use HDNET\Calendarize\Domain\Model\Configuration;
-use HDNET\Calendarize\Domain\Model\ConfigurationInterface;
-use HDNET\Calendarize\Domain\Repository\ConfigurationRepository;
-use HDNET\Calendarize\Service\TimeTable\AbstractTimeTable;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\Configuration;
+use Checkitsedo\Calendarize\Domain\Model\ConfigurationInterface;
+use Checkitsedo\Calendarize\Domain\Repository\ConfigurationRepository;
+use Checkitsedo\Calendarize\Service\TimeTable\AbstractTimeTable;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 
 /**
@@ -200,7 +200,7 @@ class TimeTableService extends AbstractService
      */
     protected function buildConfigurationHandler(Configuration $configuration): AbstractTimeTable
     {
-        $handler = 'HDNET\\Calendarize\\Service\\TimeTable\\' . \ucfirst($configuration->getType()) . 'TimeTable';
+        $handler = 'Checkitsedo\\Calendarize\\Service\\TimeTable\\' . \ucfirst($configuration->getType()) . 'TimeTable';
         if (!\class_exists($handler)) {
             throw new \Exception('There is no TimeTable handler for the given configuration type: ' . $configuration->getType(), 1236781);
         }

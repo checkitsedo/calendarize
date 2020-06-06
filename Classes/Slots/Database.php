@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Slots;
+namespace Checkitsedo\Calendarize\Slots;
 
-use HDNET\Calendarize\Register;
+use Checkitsedo\Calendarize\Register;
 
 /**
  * Create the needed database fields.

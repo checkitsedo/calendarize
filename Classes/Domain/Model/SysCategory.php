@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Domain\Model;
+namespace Checkitsedo\Calendarize\Domain\Model;
 
 use TYPO3\CMS\Extbase\Domain\Model\Category;
 

@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Hooks;
+namespace Checkitsedo\Calendarize\Hooks;
 
-use HDNET\Calendarize\Service\Url\RealUrl;
+use Checkitsedo\Calendarize\Service\Url\RealUrl;
 
 /**
  * Realurl configuration.

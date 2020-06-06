@@ -5,13 +5,13 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service\SitemapProvider;
+namespace Checkitsedo\Calendarize\Service\SitemapProvider;
 
 use FRUIT\GoogleServices\Controller\SitemapController;
 use FRUIT\GoogleServices\Domain\Model\Node;
 use FRUIT\GoogleServices\Service\SitemapProviderInterface;
-use HDNET\Calendarize\Domain\Repository\IndexRepository;
-use HDNET\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Domain\Repository\IndexRepository;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 
 /**

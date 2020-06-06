@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service;
+namespace Checkitsedo\Calendarize\Service;
 
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Utility\ArrayUtility;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Utility\ArrayUtility;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;

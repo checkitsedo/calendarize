@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Typolink;
+namespace Checkitsedo\Calendarize\Typolink;
 
-use HDNET\Calendarize\Domain\Repository\IndexRepository;
-use HDNET\Calendarize\Register;
+use Checkitsedo\Calendarize\Domain\Repository\IndexRepository;
+use Checkitsedo\Calendarize\Register;
 use TYPO3\CMS\Core\Utility\ClassNamingUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\DomainObject\DomainObjectInterface;

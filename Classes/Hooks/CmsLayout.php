@@ -5,13 +5,13 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Hooks;
+namespace Checkitsedo\Calendarize\Hooks;
 
 use HDNET\Autoloader\Utility\IconUtility;
-use HDNET\Calendarize\Service\ContentElementLayoutService;
-use HDNET\Calendarize\Service\FlexFormService;
-use HDNET\Calendarize\Utility\HelperUtility;
-use HDNET\Calendarize\Utility\TranslateUtility;
+use Checkitsedo\Calendarize\Service\ContentElementLayoutService;
+use Checkitsedo\Calendarize\Service\FlexFormService;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Utility\TranslateUtility;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\PathUtility;

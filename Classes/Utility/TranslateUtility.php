@@ -41,6 +41,6 @@ class TranslateUtility
      */
     public static function getLll(string $key): string
     {
-        return \Checkitsedo\Autoloader\Utility\TranslateUtility::getLllString($key, 'calendarize', 'locallang.xlf');
+        return \HDNET\Autoloader\Utility\TranslateUtility::getLllString($key, 'calendarize', 'locallang.xlf');
     }
 }

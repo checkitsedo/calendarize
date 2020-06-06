@@ -5,11 +5,11 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service\TimeTable;
+namespace Checkitsedo\Calendarize\Service\TimeTable;
 
-use HDNET\Calendarize\Domain\Model\Configuration;
-use HDNET\Calendarize\Service\IcsReaderService;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\Configuration;
+use Checkitsedo\Calendarize\Service\IcsReaderService;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -21,7 +21,7 @@ class ExternalTimeTable extends AbstractTimeTable
     /**
      * ICS reader service.
      *
-     * @var \HDNET\Calendarize\Service\IcsReaderService
+     * @var \Checkitsedo\Calendarize\Service\IcsReaderService
      */
     protected $icsReaderService;
 

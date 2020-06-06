@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Slots;
+namespace Checkitsedo\Calendarize\Slots;
 
-use HDNET\Calendarize\Updates\CalMigrationUpdate;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Updates\CalMigrationUpdate;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 
 /**
  * CalMigration.
@@ -18,9 +18,9 @@ class CalMigration
     /**
      * Update the sys_file_reference table for tx_cal_event files like images.
      *
-     * @see \HDNET\Calendarize\Updates\CalMigrationUpdate::performCalEventUpdate()
+     * @see \Checkitsedo\Calendarize\Updates\CalMigrationUpdate::performCalEventUpdate()
      *
-     * @signalClass \HDNET\Calendarize\Updates\CalMigrationUpdate
+     * @signalClass \Checkitsedo\Calendarize\Updates\CalMigrationUpdate
      * @signalName performCalEventUpdatePostInsert
      *
      * @return array

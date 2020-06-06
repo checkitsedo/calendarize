@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Hooks;
+namespace Checkitsedo\Calendarize\Hooks;
 
-use HDNET\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
 
 /**
  * Time shift function.

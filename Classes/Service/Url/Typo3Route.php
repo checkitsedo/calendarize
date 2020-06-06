@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service\Url;
+namespace Checkitsedo\Calendarize\Service\Url;
 
-use HDNET\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Domain\Model\Index;
 use TYPO3\CMS\Core\DataHandling\SlugHelper;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Utility\ConfigurationUtility;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Utility\ConfigurationUtility;
 use TYPO3\CMS\Core\Category\CategoryRegistry;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

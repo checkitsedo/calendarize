@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\Uri;
+namespace Checkitsedo\Calendarize\ViewHelpers\Uri;
 
 /**
  * Uri to the booking.
  */
-class BookingViewHelper extends \HDNET\Calendarize\ViewHelpers\Link\BookingViewHelper
+class BookingViewHelper extends \Checkitsedo\Calendarize\ViewHelpers\Link\BookingViewHelper
 {
     /**
      * Render the uri to the given booking.

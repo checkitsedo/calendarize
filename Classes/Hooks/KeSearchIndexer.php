@@ -5,13 +5,13 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Hooks;
+namespace Checkitsedo\Calendarize\Hooks;
 
 use HDNET\Autoloader\Utility\IconUtility;
-use HDNET\Calendarize\Domain\Model\Index;
-use HDNET\Calendarize\Domain\Repository\IndexRepository;
-use HDNET\Calendarize\Features\KeSearchIndexInterface;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Domain\Repository\IndexRepository;
+use Checkitsedo\Calendarize\Features\KeSearchIndexInterface;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**

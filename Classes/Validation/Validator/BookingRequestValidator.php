@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Validation\Validator;
+namespace Checkitsedo\Calendarize\Validation\Validator;
 
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Extbase\Validation\Validator\AbstractValidator;
 use TYPO3\CMS\Extbase\Validation\Validator\ConjunctionValidator;
 use TYPO3\CMS\Extbase\Validation\ValidatorResolver;

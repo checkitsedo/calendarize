@@ -5,14 +5,14 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Controller;
+namespace Checkitsedo\Calendarize\Controller;
 
-use HDNET\Calendarize\Domain\Model\Index;
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\EventUtility;
-use HDNET\Calendarize\Utility\ExtensionConfigurationUtility;
-use HDNET\Calendarize\Utility\TranslateUtility;
+use Checkitsedo\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\EventUtility;
+use Checkitsedo\Calendarize\Utility\ExtensionConfigurationUtility;
+use Checkitsedo\Calendarize\Utility\TranslateUtility;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\ClassNamingUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -95,7 +95,7 @@ class CalendarController extends AbstractController
     /**
      * Latest action.
      *
-     * @param \HDNET\Calendarize\Domain\Model\Index $index
+     * @param \Checkitsedo\Calendarize\Domain\Model\Index $index
      * @param \DateTime                             $startDate
      * @param \DateTime                             $endDate
      * @param array                                 $customSearch *
@@ -144,7 +144,7 @@ class CalendarController extends AbstractController
     /**
      * Result action.
      *
-     * @param \HDNET\Calendarize\Domain\Model\Index $index
+     * @param \Checkitsedo\Calendarize\Domain\Model\Index $index
      * @param \DateTime                             $startDate
      * @param \DateTime                             $endDate
      * @param array                                 $customSearch
@@ -193,7 +193,7 @@ class CalendarController extends AbstractController
     /**
      * List action.
      *
-     * @param \HDNET\Calendarize\Domain\Model\Index $index
+     * @param \Checkitsedo\Calendarize\Domain\Model\Index $index
      * @param \DateTime                             $startDate
      * @param \DateTime                             $endDate
      * @param array                                 $customSearch *
@@ -428,7 +428,7 @@ class CalendarController extends AbstractController
     /**
      * Detail action.
      *
-     * @param \HDNET\Calendarize\Domain\Model\Index $index
+     * @param \Checkitsedo\Calendarize\Domain\Model\Index $index
      *
      * @return string
      */

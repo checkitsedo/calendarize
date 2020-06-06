@@ -4,10 +4,10 @@ declare(strict_types=1);
 /**
  * Check if a date is upper.
  */
-namespace HDNET\Calendarize\Tests\Unit\ViewHelpers;
+namespace Checkitsedo\Calendarize\Tests\Unit\ViewHelpers;
 
-use HDNET\Calendarize\Tests\Unit\AbstractUnitTest;
-use HDNET\Calendarize\ViewHelpers\IfDateUpperViewHelper;
+use Checkitsedo\Calendarize\Tests\Unit\AbstractUnitTest;
+use Checkitsedo\Calendarize\ViewHelpers\IfDateUpperViewHelper;
 
 /**
  * Check if a date is upper.

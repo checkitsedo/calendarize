@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\DateTime;
+namespace Checkitsedo\Calendarize\ViewHelpers\DateTime;
 
-use HDNET\Calendarize\Domain\Model\Index;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\IndexUtility;
-use HDNET\Calendarize\ViewHelpers\AbstractViewHelper;
+use Checkitsedo\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\IndexUtility;
+use Checkitsedo\Calendarize\ViewHelpers\AbstractViewHelper;
 
 /**
  * Check if the given Index is on the given day.

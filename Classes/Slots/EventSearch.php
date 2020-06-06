@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Slots;
+namespace Checkitsedo\Calendarize\Slots;
 
-use HDNET\Calendarize\Domain\Model\PluginConfiguration;
-use HDNET\Calendarize\Domain\Repository\EventRepository;
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\PluginConfiguration;
+use Checkitsedo\Calendarize\Domain\Repository\EventRepository;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
 
 /**
@@ -21,7 +21,7 @@ class EventSearch
     /**
      * Check if we can reduce the amount of results.
      *
-     * @signalClass \HDNET\Calendarize\Domain\Repository\IndexRepository
+     * @signalClass \Checkitsedo\Calendarize\Domain\Repository\IndexRepository
      * @signalName findBySearchPre
      *
      * @param array          $indexIds
@@ -71,7 +71,7 @@ class EventSearch
     /**
      * Set ids by general.
      *
-     * @signalClass \HDNET\Calendarize\Domain\Repository\IndexRepository
+     * @signalClass \Checkitsedo\Calendarize\Domain\Repository\IndexRepository
      * @signalName getDefaultConstraints
      *
      * @param array $indexIds

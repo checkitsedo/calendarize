@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Controller;
+namespace Checkitsedo\Calendarize\Controller;
 
-use HDNET\Calendarize\Domain\Repository\IndexRepository;
-use HDNET\Calendarize\Property\TypeConverter\AbstractBookingRequest;
-use HDNET\Calendarize\Service\PluginConfigurationService;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Repository\IndexRepository;
+use Checkitsedo\Calendarize\Property\TypeConverter\AbstractBookingRequest;
+use Checkitsedo\Calendarize\Service\PluginConfigurationService;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\HttpUtility;
@@ -29,7 +29,7 @@ abstract class AbstractController extends ActionController
     /**
      * The index repository.
      *
-     * @var \HDNET\Calendarize\Domain\Repository\IndexRepository
+     * @var \Checkitsedo\Calendarize\Domain\Repository\IndexRepository
      */
     protected $indexRepository;
 
@@ -47,7 +47,7 @@ abstract class AbstractController extends ActionController
     /**
      * Inject index repository.
      *
-     * @param \HDNET\Calendarize\Domain\Repository\IndexRepository $indexRepository
+     * @param \Checkitsedo\Calendarize\Domain\Repository\IndexRepository $indexRepository
      */
     public function injectIndexRepository(IndexRepository $indexRepository)
     {

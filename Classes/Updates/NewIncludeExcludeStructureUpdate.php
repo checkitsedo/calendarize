@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Updates;
+namespace Checkitsedo\Calendarize\Updates;
 
-use HDNET\Calendarize\Domain\Model\ConfigurationInterface;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\ConfigurationInterface;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 
 /**
  * NewIncludeExcludeStructureUpdate.

@@ -5,9 +5,9 @@
 
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Routing\Aspect;
+namespace Checkitsedo\Calendarize\Routing\Aspect;
 
-use HDNET\Calendarize\Service\Url\Typo3Route;
+use Checkitsedo\Calendarize\Service\Url\Typo3Route;
 use TYPO3\CMS\Core\Routing\Aspect\PersistedMappableAspectInterface;
 use TYPO3\CMS\Core\Routing\Aspect\StaticMappableAspectInterface;
 use TYPO3\CMS\Core\Routing\RouteNotFoundException;

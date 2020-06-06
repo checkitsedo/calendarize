@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\Uri;
+namespace Checkitsedo\Calendarize\ViewHelpers\Uri;
 
 /**
  * Uri to the day.
  */
-class DayViewHelper extends \HDNET\Calendarize\ViewHelpers\Link\DayViewHelper
+class DayViewHelper extends \Checkitsedo\Calendarize\ViewHelpers\Link\DayViewHelper
 {
     /**
      * Render the uri to the given day.

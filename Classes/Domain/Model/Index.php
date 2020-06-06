@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Domain\Model;
+namespace Checkitsedo\Calendarize\Domain\Model;
 
-use HDNET\Calendarize\Exception;
-use HDNET\Calendarize\Register;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\EventUtility;
+use Checkitsedo\Calendarize\Exception;
+use Checkitsedo\Calendarize\Register;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\EventUtility;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /**

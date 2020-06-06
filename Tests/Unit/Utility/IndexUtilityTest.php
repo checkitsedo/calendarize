@@ -5,11 +5,11 @@ declare(strict_types=1);
 /**
  * IndexUtilityTest.
  */
-namespace HDNET\Calendarize\Tests\Unit\DateTime;
+namespace Checkitsedo\Calendarize\Tests\Unit\DateTime;
 
-use HDNET\Calendarize\Domain\Model\Index;
-use HDNET\Calendarize\Tests\Unit\AbstractUnitTest;
-use HDNET\Calendarize\Utility\IndexUtility;
+use Checkitsedo\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Tests\Unit\AbstractUnitTest;
+use Checkitsedo\Calendarize\Utility\IndexUtility;
 
 /**
  * IndexUtilityTest.

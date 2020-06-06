@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers\Loop;
+namespace Checkitsedo\Calendarize\ViewHelpers\Loop;
 
-use HDNET\Calendarize\ViewHelpers\AbstractViewHelper;
+use Checkitsedo\Calendarize\ViewHelpers\AbstractViewHelper;
 
 /**
  * Abstraction for loop view helper.

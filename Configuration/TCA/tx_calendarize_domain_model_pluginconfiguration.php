@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use HDNET\Autoloader\Utility\ArrayUtility;
 use HDNET\Autoloader\Utility\ModelUtility;
-use HDNET\Calendarize\Domain\Model\PluginConfiguration;
+use Checkitsedo\Calendarize\Domain\Model\PluginConfiguration;
 
 $base = ModelUtility::getTcaInformation(PluginConfiguration::class);
 
@@ -39,7 +39,7 @@ $custom = [
         'configuration' => [
             'config' => [
                 'type' => 'select',
-                'itemsProcFunc' => 'HDNET\Calendarize\Service\PluginConfigurationService->addConfig',
+                'itemsProcFunc' => 'Checkitsedo\Calendarize\Service\PluginConfigurationService->addConfig',
                 'renderType' => 'selectCheckBox',
                 'renderMode' => 'checkbox',
                 'minitems' => '1',

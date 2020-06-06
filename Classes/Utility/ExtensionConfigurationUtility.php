@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Utility;
+namespace Checkitsedo\Calendarize\Utility;
 
 use Exception;
-use HDNET\Calendarize\Register;
+use Checkitsedo\Calendarize\Register;
 use TYPO3\CMS\Extbase\DomainObject\DomainObjectInterface;
 
 /**

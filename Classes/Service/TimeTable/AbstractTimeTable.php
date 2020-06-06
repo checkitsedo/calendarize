@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service\TimeTable;
+namespace Checkitsedo\Calendarize\Service\TimeTable;
 
-use HDNET\Calendarize\Domain\Model\Configuration;
-use HDNET\Calendarize\Domain\Model\ConfigurationGroup;
-use HDNET\Calendarize\Service\AbstractService;
-use HDNET\Calendarize\Service\TimeTableService;
+use Checkitsedo\Calendarize\Domain\Model\Configuration;
+use Checkitsedo\Calendarize\Domain\Model\ConfigurationGroup;
+use Checkitsedo\Calendarize\Service\AbstractService;
+use Checkitsedo\Calendarize\Service\TimeTableService;
 
 /**
  * Abstract time table service.
@@ -20,14 +20,14 @@ abstract class AbstractTimeTable extends AbstractService
     /**
      * Time table service.
      *
-     * @var \HDNET\Calendarize\Service\TimeTableService
+     * @var \Checkitsedo\Calendarize\Service\TimeTableService
      */
     protected $timeTableService;
 
     /**
      * Inject time table service.
      *
-     * @param \HDNET\Calendarize\Service\TimeTableService $timeTableService
+     * @param \Checkitsedo\Calendarize\Service\TimeTableService $timeTableService
      */
     public function injectTimeTableService(TimeTableService $timeTableService)
     {

@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Controller;
+namespace Checkitsedo\Calendarize\Controller;
 
-use HDNET\Calendarize\Domain\Model\Request\OptionRequest;
+use Checkitsedo\Calendarize\Domain\Model\Request\OptionRequest;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 
 /**
@@ -38,7 +38,7 @@ class BackendController extends AbstractController
     /**
      * Option action.
      *
-     * @param \HDNET\Calendarize\Domain\Model\Request\OptionRequest $options
+     * @param \Checkitsedo\Calendarize\Domain\Model\Request\OptionRequest $options
      */
     public function optionAction(OptionRequest $options)
     {

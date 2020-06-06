@@ -5,13 +5,13 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service\TimeTable;
+namespace Checkitsedo\Calendarize\Service\TimeTable;
 
-use HDNET\Calendarize\Domain\Model\Configuration;
-use HDNET\Calendarize\Service\RecurrenceService;
-use HDNET\Calendarize\Utility\ConfigurationUtility;
-use HDNET\Calendarize\Utility\DateTimeUtility;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Domain\Model\Configuration;
+use Checkitsedo\Calendarize\Service\RecurrenceService;
+use Checkitsedo\Calendarize\Utility\ConfigurationUtility;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;

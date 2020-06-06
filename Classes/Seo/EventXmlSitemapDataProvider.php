@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Seo;
+namespace Checkitsedo\Calendarize\Seo;
 
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Context\Context;

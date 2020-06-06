@@ -9,7 +9,7 @@ $TYPO3_PATH/typo3/cli_dispatch.phpsh extbase schema:generate HDNET.Calendarize >
 Example in the Template:
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
 	 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
-	 xmlns:c="http://typo3.org/ns/HDNET/Calendarize/ViewHelpers">
+	 xmlns:c="http://typo3.org/ns/Checkitsedo/Calendarize/ViewHelpers">
 
 	<f:layout name="XXXX" />
 

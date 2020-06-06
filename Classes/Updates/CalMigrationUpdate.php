@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Updates;
+namespace Checkitsedo\Calendarize\Updates;
 
-use HDNET\Calendarize\Service\IndexerService;
-use HDNET\Calendarize\Utility\HelperUtility;
+use Checkitsedo\Calendarize\Service\IndexerService;
+use Checkitsedo\Calendarize\Utility\HelperUtility;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -19,7 +19,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * If using the slots please use the m with func_get_args!
  * Example:
  * /**
- *  * @signalClass \HDNET\Calendarize\Updates\CalMigrationUpdate
+ *  * @signalClass \Checkitsedo\Calendarize\Updates\CalMigrationUpdate
  *  * @signalName getCalendarizeEventUid
  *  *
  *

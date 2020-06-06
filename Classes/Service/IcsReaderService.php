@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\Service;
+namespace Checkitsedo\Calendarize\Service;
 
-use HDNET\Calendarize\Utility\DateTimeUtility;
+use Checkitsedo\Calendarize\Utility\DateTimeUtility;
 use JMBTechnologyLimited\ICalDissect\ICalEvent;
 use JMBTechnologyLimited\ICalDissect\ICalParser;
 use Sabre\VObject\Reader;

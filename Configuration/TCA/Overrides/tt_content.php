@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use HDNET\Calendarize\Utility\ConfigurationUtility;
+use Checkitsedo\Calendarize\Utility\ConfigurationUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $hideTable = (bool)ConfigurationUtility::get('disableDefaultEvent');

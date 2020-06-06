@@ -116,7 +116,7 @@ tt_content.shortcut.20.conf.tx_calendarize_domain_model_event {
   userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
   extensionName = Calendarize
   pluginName = Calendar
-  vendorName = HDNET
+  vendorName = Checkitsedo
   switchableControllerActions {
     Calendar {
       1 = shortcut

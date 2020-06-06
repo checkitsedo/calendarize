@@ -5,10 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace HDNET\Calendarize\ViewHelpers;
+namespace Checkitsedo\Calendarize\ViewHelpers;
 
-use HDNET\Calendarize\Domain\Model\Index;
-use HDNET\Calendarize\Domain\Repository\IndexRepository;
+use Checkitsedo\Calendarize\Domain\Model\Index;
+use Checkitsedo\Calendarize\Domain\Repository\IndexRepository;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
@@ -18,7 +18,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
  * == Examples ==
  *
  * <code title="Traversing thru future and past occurings of the event">
- * {namespace c=HDNET\Calendarize\ViewHelpers}
+ * {namespace c=Checkitsedo\Calendarize\ViewHelpers}
  * <f:for each="{c:indexTraversing(index:'{index}', future: 1, past: 0, limit: 10, sort: 'ASC', useIndexTime: 1)}" as="futureEvent">
  *  <f:debug>{futureEvent}</f:debug>
  * </f:for>

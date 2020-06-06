@@ -5,9 +5,9 @@ declare(strict_types=1);
 use HDNET\Autoloader\Utility\ArrayUtility;
 use HDNET\Autoloader\Utility\ModelUtility;
 use HDNET\Autoloader\Utility\TranslateUtility;
-use HDNET\Calendarize\Domain\Model\Event;
-use HDNET\Calendarize\Service\TcaService;
-use HDNET\Calendarize\Utility\ConfigurationUtility;
+use Checkitsedo\Calendarize\Domain\Model\Event;
+use Checkitsedo\Calendarize\Service\TcaService;
+use Checkitsedo\Calendarize\Utility\ConfigurationUtility;
 use TYPO3\CMS\Core\Resource\File;
 
 $base = ModelUtility::getTcaInformation(Event::class);

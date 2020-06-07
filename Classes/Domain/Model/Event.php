@@ -87,6 +87,62 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     protected $importId;
 
     /**
+     * Artist.
+     *
+     * @var string
+     * @db
+     */
+    protected $artist;
+    
+    /**
+     * Artist description.
+     *
+     * @var string
+     * @db
+     */
+    protected $artistDescription;
+    
+    /**
+     * Artist link.
+     *
+     * @var string
+     * @db
+     */
+    protected $artistLink;
+    
+    /**
+     * Instructor.
+     *
+     * @var string
+     * @db
+     */
+    protected $instructor;
+    
+    /**
+     * Instructor description.
+     *
+     * @var string
+     * @db
+     */
+    protected $instructorDescription;
+    
+    /**
+     * Instructor link.
+     *
+     * @var string
+     * @db
+     */
+    protected $instructorLink;
+    
+    /**
+     * Event language.
+     *
+     * @var string
+     * @db
+     */
+    protected $eventLanguage;
+    
+    /**
      * Images.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
@@ -533,5 +589,125 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     public function setOrganizerLink($organizerLink)
     {
         $this->organizerLink = $organizerLink;
+    }
+    
+    /**
+     * Get artist.
+     *
+     * @return string
+     */
+    public function getArtist()
+    {
+        return $this->artist;
+    }
+
+    /**
+     * Set artist.
+     *
+     * @param string $artist
+     */
+    public function setArtist($artist)
+    {
+        $this->artist = $artist;
+    }
+
+    /**
+     * Get artist description.
+     *
+     * @return string
+     */
+    public function getArtistDescription()
+    {
+        return $this->artist;
+    }
+
+    /**
+     * Set artist description.
+     *
+     * @param string $artistDescription
+     */
+    public function setArtistDescription($artistDescription)
+    {
+        $this->artistDescription = $artistDescription;
+    }
+
+    /**
+     * Get artist link.
+     *
+     * @return string
+     */
+    public function getArtistLink()
+    {
+        return $this->artistLink;
+    }
+
+    /**
+     * Set artist link.
+     *
+     * @param string $artistLink
+     */
+    public function setArtistLink($artistLink)
+    {
+        $this->artistLink = $artistLink;
+    }
+    
+    /**
+     * Get instructor.
+     *
+     * @return string
+     */
+    public function getInstructor()
+    {
+        return $this->instructor;
+    }
+
+    /**
+     * Set instructor.
+     *
+     * @param string $instructor
+     */
+    public function setInstructor($instructor)
+    {
+        $this->instructor = $instructor;
+    }
+    
+    /**
+     * Get instructor description.
+     *
+     * @return string
+     */
+    public function getInstructorDescription()
+    {
+        return $this->instructorDescription;
+    }
+
+    /**
+     * Set instructor description.
+     *
+     * @param string $instructorDescription
+     */
+    public function setInstructorDescription($instructorDescription)
+    {
+        $this->instructorDescription = $instructorDescription;
+    }
+    
+    /**
+     * Get instructor link.
+     *
+     * @return string
+     */
+    public function getInstructorLink()
+    {
+        return $this->instructorLink;
+    }
+
+    /**
+     * Set instructor link.
+     *
+     * @param string $instructorLink
+     */
+    public function setInstructorLink($instructorLink)
+    {
+        $this->instructorLink = $instructorLink;
     }
 }

@@ -30,12 +30,12 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     protected $title;
 
     /**
-     * Abstract / Teaser.
+     * Subtitle.
      *
      * @var string
      * @db
      */
-    protected $abstract;
+    protected $subtitle;
 
     /**
      * Description.
@@ -160,23 +160,23 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     }
 
     /**
-     * Get abstract.
+     * Get subtitle.
      *
      * @return string
      */
-    public function getAbstract()
+    public function getSubtitle()
     {
-        return $this->abstract;
+        return $this->subtitle;
     }
 
     /**
-     * Set abstract.
+     * Set subtitle.
      *
-     * @param string $abstract
+     * @param string $subtitle
      */
-    public function setAbstract($abstract)
+    public function setSubtitle($subtitle)
     {
-        $this->abstract = $abstract;
+        $this->subtitle = $subtitle;
     }
 
     /**
@@ -456,7 +456,7 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     }
 
     /**
-     * Get orginzer.
+     * Get organizer.
      *
      * @return string
      */

@@ -95,20 +95,20 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     protected $artist;
     
     /**
-     * Artist description.
-     *
-     * @var string
-     * @db
-     */
-    protected $artistDescription;
-    
-    /**
      * Artist link.
      *
      * @var string
      * @db
      */
     protected $artistLink;
+    
+    /**
+     * Artist description.
+     *
+     * @var string
+     * @db
+     */
+    protected $artistDescription;
     
     /**
      * Instructor.
@@ -119,20 +119,20 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     protected $instructor;
     
     /**
-     * Instructor description.
-     *
-     * @var string
-     * @db
-     */
-    protected $instructorDescription;
-    
-    /**
      * Instructor link.
      *
      * @var string
      * @db
      */
     protected $instructorLink;
+    
+    /**
+     * Instructor description.
+     *
+     * @var string
+     * @db
+     */
+    protected $instructorDescription;
     
     /**
      * Event language.
@@ -612,26 +612,6 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     }
 
     /**
-     * Get artist description.
-     *
-     * @return string
-     */
-    public function getArtistDescription()
-    {
-        return $this->artist;
-    }
-
-    /**
-     * Set artist description.
-     *
-     * @param string $artistDescription
-     */
-    public function setArtistDescription($artistDescription)
-    {
-        $this->artistDescription = $artistDescription;
-    }
-
-    /**
      * Get artist link.
      *
      * @return string
@@ -651,6 +631,26 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
         $this->artistLink = $artistLink;
     }
     
+    /**
+     * Get artist description.
+     *
+     * @return string
+     */
+    public function getArtistDescription()
+    {
+        return $this->artist;
+    }
+
+    /**
+     * Set artist description.
+     *
+     * @param string $artistDescription
+     */
+    public function setArtistDescription($artistDescription)
+    {
+        $this->artistDescription = $artistDescription;
+    }
+
     /**
      * Get instructor.
      *
@@ -672,6 +672,26 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     }
     
     /**
+     * Get instructor link.
+     *
+     * @return string
+     */
+    public function getInstructorLink()
+    {
+        return $this->instructorLink;
+    }
+
+    /**
+     * Set instructor link.
+     *
+     * @param string $instructorLink
+     */
+    public function setInstructorLink($instructorLink)
+    {
+        $this->instructorLink = $instructorLink;
+    }
+
+    /**
      * Get instructor description.
      *
      * @return string
@@ -690,24 +710,24 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     {
         $this->instructorDescription = $instructorDescription;
     }
-    
+
     /**
-     * Get instructor link.
+     * Get event language.
      *
      * @return string
      */
-    public function getInstructorLink()
+    public function getEventLanguage()
     {
-        return $this->instructorLink;
+        return $this->eventLanguage;
     }
 
     /**
-     * Set instructor link.
+     * Set event language.
      *
-     * @param string $instructorLink
+     * @param string $eventLanguage
      */
-    public function setInstructorLink($instructorLink)
+    public function setEventLanguage($eventLanguage)
     {
-        $this->instructorLink = $instructorLink;
+        $this->eventLanguage = $eventLanguage;
     }
 }

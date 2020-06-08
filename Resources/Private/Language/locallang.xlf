@@ -327,6 +327,27 @@
 			<trans-unit id="tx_calendarize_domain_model_event.event_language">
 				<source>Event language</source>
 			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.free_entry_fields">
+				<source>Free entry fields</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.free_entry">
+				<source>Free entry</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.collection">
+				<source>Collection</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.collection_reference">
+				<source>Collection reference</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.price_fields">
+				<source>Price fields</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.price_standard">
+				<source>Price standard</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.price_reduced">
+				<source>Price reduced</source>
+			</trans-unit>
 			<trans-unit id="tx_calendarize_domain_model_event.images">
 				<source>Images</source>
 			</trans-unit>

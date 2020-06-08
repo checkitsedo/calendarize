@@ -65,6 +65,48 @@ $custom = [
                 'renderType' => 'inputLink',
             ],
         ],
+        'free_entry' => [
+            'onChange' => 'reload',
+            'config' => [
+                'default' => '0',
+            ],
+        ],
+        'collection' => [
+            'onChange' => 'reload',
+            'config' => [
+                'default' => '0',
+            ],
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:0',
+                ],
+            ],
+        ],
+        'collection_reference' => [
+            'onChange' => 'reload',
+            'displayCond' => [
+                'AND' => [
+					'FIELD:free_entry:!=:0',
+                    'FIELD:collection:!=:0',
+                ],
+            ],
+        ],
+        'price_standard' => [
+            'onChange' => 'reload',
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:1',
+                ],
+            ],
+        ],
+        'price_reduced' => [
+            'onChange' => 'reload',
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:1',
+                ],
+            ],
+        ],
         'images' => [
             'config' => [
                 // Use the imageoverlayPalette instead of the basicoverlayPalette
@@ -122,6 +164,14 @@ $custom = [
 			'label' => 'instructor_fields',
 			'showitem' => 'instructor,instructor_link,--linebreak--,instructor_description,event_language',
 		],
+		'free_entry_fields' => [
+			'label' => 'free_entry_fields',
+			'showitem' => 'free_entry,--linebreak--,collection,--linebreak--,collection_reference',
+		],
+		'price_fields' => [
+			'label' => 'price_fields',
+			'showitem' => 'price_standard,--linebreak--,price_reduced',
+		],
 	],
 ];
 
@@ -132,6 +182,8 @@ $search = [
 	'organizer,organizer_link',
 	'artist,artist_link,artist_description',
 	'instructor,instructor_link,instructor_description,event_language',
+    'free_entry,collection,collection_reference',
+    'price_standard,price_reduced',
     'images,downloads,',
     'language,--div--',
     'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended',
@@ -141,6 +193,8 @@ $replace = [
 	',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.organizer_fields;organizer_fields',    
 	',--div--;' . TranslateUtility::getLllOrHelpMessage('details', 'calendarize') . ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.artist_fields;artist_fields',
 	',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.instructor_fields;instructor_fields',
+    ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.free_entry_fields;free_entry_fields',
+    ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.price_fields;price_fields',
     ',',
     'language,--div--;' . TranslateUtility::getLllOrHelpMessage('files', 'calendarize') . ',images,downloads,--div--',
     TranslateUtility::getLllOrHelpMessage('dateOptions', 'calendarize'),

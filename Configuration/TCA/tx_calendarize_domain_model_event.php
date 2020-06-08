@@ -45,6 +45,26 @@ $custom = [
                 'renderType' => 'inputLink',
             ],
         ],
+        'artist_description' => [
+            'config' => [
+                'type' => 'text',
+            ],
+        ],
+        'artist_link' => [
+            'config' => [
+                'renderType' => 'inputLink',
+            ],
+        ],
+        'instructor_description' => [
+            'config' => [
+                'type' => 'text',
+            ],
+        ],
+        'instructor_link' => [
+            'config' => [
+                'renderType' => 'inputLink',
+            ],
+        ],
         'images' => [
             'config' => [
                 // Use the imageoverlayPalette instead of the basicoverlayPalette
@@ -85,16 +105,42 @@ $custom = [
             ],
         ],
     ],
+    'palettes' => [
+		'location_fields' => [
+			'label' => 'location_fields',
+			'showitem' => 'location,location_link',
+		],
+		'organizer_fields' => [
+			'label' => 'organizer_fields',
+			'showitem' => 'organizer,organizer_link',
+		],
+		'artist_fields' => [
+			'label' => 'artist_fields',
+			'showitem' => 'artist,artist_link,--linebreak--,artist_description',
+		],
+		'instructor_fields' => [
+			'label' => 'instructor_fields',
+			'showitem' => 'instructor,instructor_link,--linebreak--,instructor_description,event_language',
+		],
+	],
 ];
 
 $tca = ArrayUtility::mergeRecursiveDistinct($base, $custom);
 
 $search = [
+	'location,location_link',
+	'organizer,organizer_link',
+	'artist,artist_link,artist_description',
+	'instructor,instructor_link,instructor_description,event_language',
     'images,downloads,',
     'language,--div--',
     'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended',
 ];
 $replace = [
+	',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.location_fields;location_fields',
+	',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.organizer_fields;organizer_fields',    
+	',--div--;' . TranslateUtility::getLllOrHelpMessage('details', 'calendarize') . ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.artist_fields;artist_fields',
+	',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.instructor_fields;instructor_fields',
     ',',
     'language,--div--;' . TranslateUtility::getLllOrHelpMessage('files', 'calendarize') . ',images,downloads,--div--',
     TranslateUtility::getLllOrHelpMessage('dateOptions', 'calendarize'),

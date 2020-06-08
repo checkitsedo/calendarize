@@ -297,6 +297,9 @@
 			<trans-unit id="tx_calendarize_domain_model_event.import_id">
 				<source>Import ID</source>
 			</trans-unit>
+			<trans-unit id="details">
+				<source>Details</source>
+			</trans-unit>
 			<trans-unit id="tx_calendarize_domain_model_event.artist_fields">
 				<source>Artist fields</source>
 			</trans-unit>

@@ -143,6 +143,46 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     protected $eventLanguage;
     
     /**
+     * Free entry.
+     *
+     * @var bool
+     * @db
+     */
+    protected $freeEntry;
+
+    /**
+     * Collection.
+     *
+     * @var bool
+     * @db
+     */
+    protected $collection;
+    
+    /**
+     * Collection reference.
+     *
+     * @var string
+     * @db
+     */
+    protected $collectionReference;
+    
+    /**
+     * Price standard.
+     *
+     * @var string
+     * @db
+     */
+    protected $priceStandard;
+    
+    /**
+     * Price reduced.
+     *
+     * @var string
+     * @db
+     */
+    protected $priceReduced;
+    
+    /**
      * Images.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
@@ -729,5 +769,105 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     public function setEventLanguage($eventLanguage)
     {
         $this->eventLanguage = $eventLanguage;
+    }
+    
+    /**
+     * Is free entry.
+     *
+     * @return bool
+     */
+    public function isFreeEntry()
+    {
+        return (bool)$this->freeEntry;
+    }
+
+    /**
+     * Set free entry.
+     *
+     * @param bool $freeEntry
+     */
+    public function setFreeEntry($freeEntry)
+    {
+        $this->freeEntry = (bool)$freeEntry;
+    }
+	
+    /**
+     * Is collection.
+     *
+     * @return bool
+     */
+    public function isCollection()
+    {
+        return (bool)$this->collection;
+    }
+
+    /**
+     * Set collection.
+     *
+     * @param bool $collection
+     */
+    public function setCollection($collection)
+    {
+        $this->collection = (bool)$collection;
+    }
+
+    /**
+     * Get collection reference.
+     *
+     * @return string
+     */
+    public function getCollectionReference()
+    {
+        return $this->collectionReference;
+    }
+
+    /**
+     * Set collection reference.
+     *
+     * @param string $collectionReference
+     */
+    public function setCollectionReference($collectionReference)
+    {
+        $this->collectionReference = $collectionReference;
+    }
+
+    /**
+     * Get price standard.
+     *
+     * @return string
+     */
+    public function getPriceStandard()
+    {
+        return $this->priceStandard;
+    }
+
+    /**
+     * Set price standard.
+     *
+     * @param string $priceStandard
+     */
+    public function setPriceStandard($priceStandard)
+    {
+        $this->priceStandard = $priceStandard;
+    }
+
+    /**
+     * Get price reduced.
+     *
+     * @return string
+     */
+    public function getPriceReduced()
+    {
+        return $this->priceReduced;
+    }
+
+    /**
+     * Set price reduced.
+     *
+     * @param string $priceReduced
+     */
+    public function setPriceReduced($priceReduced)
+    {
+        $this->priceReduced = $priceReduced;
     }
 }

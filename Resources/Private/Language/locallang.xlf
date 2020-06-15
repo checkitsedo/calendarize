@@ -339,6 +339,9 @@
 			<trans-unit id="tx_calendarize_domain_model_event.collection_reference">
 				<source>Collection reference</source>
 			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.registration_required">
+				<source>Registration required</source>
+			</trans-unit>
 			<trans-unit id="tx_calendarize_domain_model_event.price_fields">
 				<source>Price fields</source>
 			</trans-unit>
@@ -347,6 +350,18 @@
 			</trans-unit>
 			<trans-unit id="tx_calendarize_domain_model_event.price_reduced">
 				<source>Price reduced</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.booking_fields">
+				<source>Booking fields</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.booking_required">
+				<source>Booking required</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.external_booking">
+				<source>External booking</source>
+			</trans-unit>
+			<trans-unit id="tx_calendarize_domain_model_event.booking_link">
+				<source>Booking link</source>
 			</trans-unit>
 			<trans-unit id="tx_calendarize_domain_model_event.images">
 				<source>Images</source>

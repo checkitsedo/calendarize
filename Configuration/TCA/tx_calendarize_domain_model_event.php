@@ -216,7 +216,7 @@ $custom = [
 		],
 		'booking_fields' => [
 			'label' => 'booking_fields',
-			'showitem' => 'booking_required,external_booking,booking_link',
+			'showitem' => 'booking_required,--linebreak--,external_booking,--linebreak--,booking_link',
 		],
 	],
 ];

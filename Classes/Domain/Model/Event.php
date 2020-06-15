@@ -167,6 +167,14 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     protected $collectionReference;
     
     /**
+     * Registration required.
+     *
+     * @var bool
+     * @db
+     */
+    protected $registrationRequired;
+
+    /**
      * Price standard.
      *
      * @var string
@@ -181,6 +189,30 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
      * @db
      */
     protected $priceReduced;
+    
+    /**
+     * Booking required.
+     *
+     * @var bool
+     * @db
+     */
+    protected $bookingRequired;
+
+    /**
+     * External booking.
+     *
+     * @var bool
+     * @db
+     */
+    protected $externalBooking;
+
+    /**
+     * Booking link.
+     *
+     * @var string
+     * @db
+     */
+    protected $bookingLink;
     
     /**
      * Images.
@@ -832,6 +864,26 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     }
 
     /**
+     * Is registration required.
+     *
+     * @return bool
+     */
+    public function isRegistrationRequired()
+    {
+        return (bool)$this->registrationRequired;
+    }
+
+    /**
+     * Set registration required.
+     *
+     * @param bool $registrationRequired
+     */
+    public function setRegistrationRequired($registrationRequired)
+    {
+        $this->registrationRequired = (bool)$registrationRequired;
+    }
+	
+    /**
      * Get price standard.
      *
      * @return string
@@ -869,5 +921,65 @@ class Event extends AbstractModel implements FeedInterface, SpeakingUrlInterface
     public function setPriceReduced($priceReduced)
     {
         $this->priceReduced = $priceReduced;
+    }
+    
+    /**
+     * Is booking required.
+     *
+     * @return bool
+     */
+    public function isBookingRequired()
+    {
+        return (bool)$this->bookingRequired;
+    }
+
+    /**
+     * Set booking required.
+     *
+     * @param bool $bookingRequired
+     */
+    public function setBookingRequired($bookingRequired)
+    {
+        $this->bookingRequired = (bool)$bookingRequired;
+    }	
+    
+    /**
+     * Is external booking.
+     *
+     * @return bool
+     */
+    public function isExternalBooking()
+    {
+        return (bool)$this->externalBooking;
+    }
+
+    /**
+     * Set external booking.
+     *
+     * @param bool $externalBooking
+     */
+    public function setExternalBooking($externalBooking)
+    {
+        $this->externalBooking = (bool)$externalBooking;
+    }	
+    
+    /**
+     * Get booking link.
+     *
+     * @return string
+     */
+    public function getBookingLink()
+    {
+        return $this->bookingLink;
+    }
+
+    /**
+     * Set booking link.
+     *
+     * @param string $bookingLink
+     */
+    public function setBookingLink($bookingLink)
+    {
+        $this->bookingLink = $bookingLink;
     }
 }

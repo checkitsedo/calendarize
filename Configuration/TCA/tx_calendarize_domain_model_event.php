@@ -91,6 +91,16 @@ $custom = [
                 ],
             ],
         ],
+        'registration_required' => [
+            'config' => [
+                'default' => '0',
+            ],
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:0',
+                ],
+            ],
+        ],
         'price_standard' => [
             'onChange' => 'reload',
             'displayCond' => [
@@ -104,6 +114,38 @@ $custom = [
             'displayCond' => [
                 'AND' => [
                     'FIELD:free_entry:!=:1',
+                ],
+            ],
+        ],
+        'booking_required' => [
+            'config' => [
+                'default' => '0',
+            ],
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:1',
+                ],
+            ],
+        ],
+        'external_booking' => [
+            'config' => [
+                'default' => '0',
+            ],
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:1',
+                    'FIELD:booking_required:!=:0',
+                ],
+            ],
+        ],
+        'booking_link' => [
+            'config' => [
+                'renderType' => 'inputLink',
+            ],
+            'displayCond' => [
+                'AND' => [
+                    'FIELD:free_entry:!=:1',
+                    'FIELD:external_booking:!=:0',
                 ],
             ],
         ],
@@ -166,11 +208,15 @@ $custom = [
 		],
 		'free_entry_fields' => [
 			'label' => 'free_entry_fields',
-			'showitem' => 'free_entry,--linebreak--,collection,--linebreak--,collection_reference',
+			'showitem' => 'free_entry,--linebreak--,collection,--linebreak--,collection_reference,--linebreak--,registration_required',
 		],
 		'price_fields' => [
 			'label' => 'price_fields',
 			'showitem' => 'price_standard,--linebreak--,price_reduced',
+		],
+		'booking_fields' => [
+			'label' => 'booking_fields',
+			'showitem' => 'booking_required,external_booking,booking_link',
 		],
 	],
 ];
@@ -182,8 +228,9 @@ $search = [
 	'organizer,organizer_link',
 	'artist,artist_link,artist_description',
 	'instructor,instructor_link,instructor_description,event_language',
-    'free_entry,collection,collection_reference',
+    'free_entry,collection,collection_reference,registration_required',
     'price_standard,price_reduced',
+    'booking_required,external_booking,booking_link',
     'images,downloads,',
     'language,--div--',
     'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended',
@@ -195,6 +242,7 @@ $replace = [
 	',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.instructor_fields;instructor_fields',
     ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.free_entry_fields;free_entry_fields',
     ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.price_fields;price_fields',
+    ',--palette--;LLL:EXT:calendarize/Resources/Private/Language/locallang.xlf:tx_calendarize_domain_model_event.booking_fields;booking_fields',
     ',',
     'language,--div--;' . TranslateUtility::getLllOrHelpMessage('files', 'calendarize') . ',images,downloads,--div--',
     TranslateUtility::getLllOrHelpMessage('dateOptions', 'calendarize'),

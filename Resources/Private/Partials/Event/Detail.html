@@ -48,7 +48,16 @@
 	</f:if>
 
 	<f:if condition="{settings.bookingPid}">
-		<f:if condition="{event.bookable}">
+		<f:if condition="{event.registrationRequired}">
+			<c:link.registration index="{index}" class="btn btn-default btn-primary">
+				<f:translate key="registration"/>
+				<span class="glyphicon glyphicon-arrow-right"></span>
+			</c:link.registration>
+		</f:if>
+	</f:if>
+	
+	<f:if condition="{settings.bookingPid}">
+		<f:if condition="{event.bookingRequired}">
 			<c:link.booking index="{index}" class="btn btn-default btn-primary">
 				<f:translate key="booking"/>
 				<span class="glyphicon glyphicon-arrow-right"></span>

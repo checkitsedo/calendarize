@@ -827,6 +827,59 @@
 				<target>Kalender Buchung</target>
 			</trans-unit>
 
+			<trans-unit id="registration" approved="yes">
+				<source>Registration</source>
+				<target>anmelden</target>
+			</trans-unit>
+			<trans-unit id="registration.firstName" approved="yes">
+				<source>First name</source>
+				<target>Vorname</target>
+			</trans-unit>
+			<trans-unit id="registration.lastName" approved="yes">
+				<source>Last name</source>
+				<target>Nachname</target>
+			</trans-unit>
+			<trans-unit id="registration.email" approved="yes">
+				<source>E-Mail</source>
+				<target>E-Mail</target>
+			</trans-unit>
+			<trans-unit id="registration.phone" approved="yes">
+				<source>Phone</source>
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="registration.street" approved="yes">
+				<source>Street</source>
+				<target>Straße</target>
+			</trans-unit>
+			<trans-unit id="registration.houseNumber" approved="yes">
+				<source>House number</source>
+				<target>Hausnummer</target>
+			</trans-unit>
+			<trans-unit id="registration.zip" approved="yes">
+				<source>ZIP</source>
+				<target>PLZ</target>
+			</trans-unit>
+			<trans-unit id="registration.city" approved="yes">
+				<source>City</source>
+				<target>Stadt</target>
+			</trans-unit>
+			<trans-unit id="registration.country" approved="yes">
+				<source>Country</source>
+				<target>Land</target>
+			</trans-unit>
+			<trans-unit id="registration.message" approved="yes">
+				<source>Message</source>
+				<target>Nachricht</target>
+			</trans-unit>
+			<trans-unit id="registration.send" approved="yes">
+				<source>Send</source>
+				<target>Senden</target>
+			</trans-unit>
+			<trans-unit id="registration.thankYouMessage" approved="yes">
+				<source>Thank you for your booking request. We will contact you shortly.</source>
+				<target>Vielen Dank für Ihre Buchung. Wir werden sie in Kürze kontaktieren.</target>
+			</trans-unit>
+
 			<trans-unit id="booking" approved="yes">
 				<source>Booking</source>
 				<target>buchen</target>

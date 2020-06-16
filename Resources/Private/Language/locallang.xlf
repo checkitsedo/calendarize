@@ -633,6 +633,46 @@
 				<source>Calendar Booking</source>
 			</trans-unit>
 
+			<trans-unit id="registration">
+				<source>Registration</source>
+			</trans-unit>
+			<trans-unit id="registration.firstName">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="registration.lastName">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="registration.email">
+				<source>E-Mail</source>
+			</trans-unit>			
+			<trans-unit id="registration.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="registration.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="registration.houseNumber">
+				<source>House number</source>
+			</trans-unit>
+			<trans-unit id="registration.zip">
+				<source>ZIP</source>
+			</trans-unit>
+			<trans-unit id="registration.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="registration.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="registration.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="registration.send">
+				<source>Send</source>
+			</trans-unit>
+			<trans-unit id="registration.thankYouMessage">
+				<source>Thank you for your registration request. We will contact you shortly.</source>
+			</trans-unit>
+
 			<trans-unit id="booking">
 				<source>Booking</source>
 			</trans-unit>

@@ -715,7 +715,7 @@
         },
         {
             "name": "lochmueller/autoloader",
-            "version": "6.2.1",
+            "version": "7.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lochmueller/autoloader.git",
@@ -729,7 +729,7 @@
             },
             "require": {
                 "php": ">=7.0.0",
-                "typo3/cms-core": "~8.7.0||~9.5.0||dev-master"
+                "typo3/cms-core": "~8.7.0||~9.5.0||~10.4||dev-master"
             },
             "replace": {
                 "autoloader": "self.version",

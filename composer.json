@@ -43,7 +43,7 @@
 		"php": "^7.2||^7.3||^7.4",
 		"ext-json": "*",
 		"ext-pdo": "*",
-		"typo3/cms-core": "^8.7||^9.4||^10",
+		"typo3/cms-core": "^8.7||^9.4||^10.4",
 		"lochmueller/autoloader": "^7.1.0",
 		"sabre/vobject": "^4.2"
 	},

@@ -151,6 +151,7 @@ $custom = [
         ],
         'images' => [
             'config' => [
+                'type' => 'file',
                 // Use the imageoverlayPalette instead of the basicoverlayPalette
                 'overrideChildTca' => [
                     'types' => [
